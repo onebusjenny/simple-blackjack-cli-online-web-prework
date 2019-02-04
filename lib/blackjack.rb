@@ -37,6 +37,9 @@ puts "Sorry, you hit #{cards}. Thanks for playing!"
 end
 
 def initial_round
+   deal_card
+  deal_card
+  display_card_total
   deal_card
   display_card_total
 end
@@ -46,16 +49,12 @@ def hit?
   get_user_input
   deal_card
   invalid_command
-  puts "please enter a valid command"
   prompt_user
 end
 
 def invalid_command
-  deal_card
-  deal_card
-  display_card_total
-  deal_card
-  display_card_total
+    puts "please enter a valid command"
+    
 end
 
 #####################################################
@@ -63,6 +62,12 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+  prompt_user
+  hit?
+  prompt_user
+end_game
+  
 end
     
