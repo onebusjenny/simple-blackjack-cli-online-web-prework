@@ -24,11 +24,11 @@ end
 
 def end_game
   cards = 1
-  while cards <= 30
+  while cards <= 6
   puts "You now have #{cards} "
-  break if cards == 22
-  
-  
+  break if cards == 4
+  cards += 1
+puts "Sorry, you hit #{cards}. Thanks for playing!"
 end
 
 def initial_round
