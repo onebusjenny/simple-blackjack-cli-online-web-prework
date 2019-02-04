@@ -42,11 +42,17 @@ def initial_round
 end
 
 def hit?
-  # code hit? here
+  prompt_user
+  get_user_input
+  deal_card
 end
 
 def invalid_command
-  # code invalid_command here
+  deal_card
+  deal_card
+  display_card_total
+  deal_card
+  display_card_total
 end
 
 #####################################################
