@@ -45,6 +45,9 @@ def hit?
   prompt_user
   get_user_input
   deal_card
+  invalid_command
+  puts "please enter a valid command"
+  prompt_user
 end
 
 def invalid_command
