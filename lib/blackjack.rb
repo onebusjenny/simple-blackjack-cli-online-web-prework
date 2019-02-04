@@ -23,7 +23,12 @@ def get_user_input
 end
 
 def end_game
-  # code #end_game here
+  cards = 1
+  while cards <= 30
+  puts "You now have #{cards} "
+  break if cards == 22
+  
+  
 end
 
 def initial_round
