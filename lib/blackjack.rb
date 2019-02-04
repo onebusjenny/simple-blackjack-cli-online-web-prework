@@ -8,7 +8,12 @@ def deal_card
 end
 
 def display_card_total
-  # code #display_card_total here
+  cards = 1
+  while cards <= 6
+  puts "You now have #{cards} "
+  break if cards == 4
+  cards += 1
+puts "Your cards add up to #{cards}."
 end
 
 def prompt_user
@@ -32,7 +37,8 @@ puts "Sorry, you hit #{cards}. Thanks for playing!"
 end
 
 def initial_round
-  # code #initial_round here
+  deal_card
+  display_card_total
 end
 
 def hit?
